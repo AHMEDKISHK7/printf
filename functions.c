@@ -64,7 +64,7 @@ int print_string(va_list types, char buffer[],
 		{
 			for (n = width - length ; n > 0 ; n--)
 				write(1, " ", 1);
-			write(1, $str[0], length);
+			write(1, &str[0], length);
 			return (width);
 		}
 	}

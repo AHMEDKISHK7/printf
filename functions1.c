@@ -63,7 +63,7 @@ int print_octal(va_list types, char buffer[],
 
 	while (num > 0)
 	{
-		buffer[i--] = (num % 8) + '0';
+		buffer[n--] = (num % 8) + '0';
 		num /= 8;
 	}
 
